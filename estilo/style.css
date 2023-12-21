@@ -347,3 +347,18 @@ footer .line-footer p a:hover {
     color: #ffffff80;
 }
 
+@media screen and (width: 1020px){
+    /* GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+    
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop, .btn-contacto {
+        display: none;
+    }
+}
