@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/style.css">
+
+    <!--GOGLE FONTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--FIM GOGLE FONTES-->
+
+    <!--ICONES-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--FIM ICONES-->
+
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     
     <title>Projeto Porfólio</title>
@@ -13,14 +23,14 @@
     <header>
         <div class="interface">
             <div class="logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="imagens/logo.png" alt="Logo BRN">
                 </a>
             </div> <!--logo-->
             
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
+                    <li><a href="">Início</a></li>
                     <li><a href="#">Especialidades</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Projectos</a></li>
@@ -49,11 +59,11 @@
                         </div>
                     </div>
                     <div class="img-topo">
-                        <img src="imagens/site.png" alt="Objecto"> 
+                        <img src="imagens/pessoa.png" alt="Objecto"> 
                     </div>    
                 </div>
             </div> <!--interface-->
-        </section>
+        </section> <!--topo do site-->
 
         <section class="especialidades">
             <div class="interface">
@@ -75,8 +85,84 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ullam a nam ipsa iure molestias exercitationem quia unde impedit placeat?</p>
                     </div>
                 </div>
+            </div> 
+        </section> <!--Especialidades-->
+
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="imagens/foto.png" alt="foto">
+                    </div>
+
+                    <div class="texto-sobre">
+                        <h2>MUITO PRAZER, <span>SOU ABIGAL FONSECA.</span></h2>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto est vitae minus! Molestias placeat explicabo, hic sequi earum similique quisquam provident quas. Iure dolorum suscipit eius numquam possimus architecto excepturi.</p>
+
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi dicta quae officiis debitis recusandae reprehenderit libero pariatur facilis cumque impedit unde fuga ab tempore, qui maiores velit ullam corrupti vel?</p>
+
+                        <div class="btn-social">
+                            <a href="https://facebook.com/abigalfonseca/" target="_blank" rel="external"><button><i class="bi bi-facebook"></i></button></a>
+                            <a href="www.linkedin.com/in/abigalfonseca" target="_blank" rel="external"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/abigalfonseca/" target="_blank" rel="external"><button><i class="bi bi-github"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!--Sobre-->
+
+        <section class="portifolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTIFÓLIO.</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
+                        <div class="overlay">Projecto 01</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
+                        <div class="overlay">Projecto 02</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(imagens/imagem.jpg);">
+                        <div class="overlay">Projecto 03</div>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome:" required>
+                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
+                    <input type="text" name="" id="" placeholder="Seu celular:">
+                    <textarea name="" id="" placeholder="Sua mensagem:" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div>
+        </section> <!--formulario-->
     </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="imagens/logo.png" alt="Logotipo">
+                    </div>
+                    <div class="btn-social">
+                        <a href="https://facebook.com/abigalfonseca/" target="_blank" rel="external"><button><i class="bi bi-facebook"></i></button></a>
+                        <a href="www.linkedin.com/in/abigalfonseca/" target="_blank" rel="external"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://github.com/abigalfonseca/" target="_blank" rel="external"><button><i class="bi bi-github"></i></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:abigalskull17@gmail.com" target="_blank" rel="external"> abigalskull17@gmail.com</a></p>
+            </div>
+        </div> <!--interface-->
+    </footer>
 </body>
 </html>
