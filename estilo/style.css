@@ -92,7 +92,13 @@ header a {
     display: inline-block;
 }
 
-header a:hover {
+header nav.menu-desktop a:hover {
+    color: #fff;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+header .logo a:hover{
     color: #fff;
     transform: scale(1.05);
     transition: .2s;
@@ -102,10 +108,82 @@ header nav ul {
     list-style-type: none;
 }
 
-header nav ul li {
+header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
 }
+
+/*ESTILO DO MENU MOBILE*/
+
+    .btn-abrir i {
+        color: #00FF08;
+        font-size: 45px;
+        display: none;
+    }
+    
+    .btn-abrir:hover{
+        transform: scale(1.05);
+        transition: .2s;
+    }
+
+    .menu-mobile {
+        background-color: #000;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 99999;
+        width: 0%;
+        overflow: hidden;
+        transition: .7s;
+        display: none;
+    }
+
+    .menu-mobile.abrir-menu{
+        width: 70%;
+    }
+
+    .menu-mobile.abrir-menu ~ .overlay-menu{
+        display: block;
+    }
+
+    .menu-mobile .btn-fechar {
+        padding: 20px 5%;
+    }
+
+    .menu-mobile .btn-fechar i {
+        color: #00FF08;
+        font-size: 30px;
+    }
+
+    .menu-mobile nav ul {
+        text-align: right;
+    }
+
+    .menu-mobile nav ul li a {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300px;
+        padding: 20px 8%;
+        display: block;
+    }
+
+    .menu-mobile nav ul li a:hover {
+        background-image: linear-gradient(to left, #00ff08, transparent );
+        color: #000;
+    }
+
+    .overlay-menu {
+        background-color: #000000c0;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 88888;
+        display: none;
+        
+    }
 
 
 
@@ -203,6 +281,7 @@ section.sobre .flex {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 30px;
+    text-align: start;
 }
 
 .sobre .texto-sobre h2 span {
@@ -226,7 +305,7 @@ section.portifolio {
 section.portifolio .flex {
     justify-content: space-around;
     margin-top: 60px;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
 }
 
 .img-port {
@@ -308,7 +387,7 @@ form .btn-enviar input{
     width: 120px;
     background-color: #00FF08;
     color: #000;
-    font-weight: 700;
+    font-weight: bold;
     cursor: pointer;
     transition: .2s;
 }
@@ -347,18 +426,100 @@ footer .line-footer p a:hover {
     color: #ffffff80;
 }
 
-@media screen and (width: 1020px){
-    /* GERAIS */
+@media screen and (max-width: 1020px) {
+    /*GERAIS*/
     .flex {
         flex-direction: column;
     }
-    
+
+    h2.titulo {
+        font-size: 32px;
+        margin: 15px 0px;
+        line-height: 30px;
+    }
+
     .topo-do-site .flex {
         flex-direction: column-reverse;
     }
 
-    /* CABEÇALHO */
+    /*CABEÇALHO*/
+
     .menu-desktop, .btn-contacto {
         display: none;
+    }
+    
+    /*MENU MOBILE*/
+
+    .btn-abrir i {
+        display: block;
+    }
+    .menu-mobile {
+        display: block;
+
+    }
+
+    /*TOPO DO SITE*/
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    section.topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo img {
+        width: 100%;
+    }
+
+    /* ESTILO ESPECIALIDADES */
+
+    section.especialidades {
+    padding: 20px 8%;
+    }
+
+    section.especialidades .flex {
+        gap: 40px;
+    }
+
+    /*SOBRE*/
+    .sobre .texto-sobre h2 {
+        font-size: 32px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    .img-sobre img {
+        width: 100%;
+    }
+
+    /*PORTIFOLIO*/
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: auto;
+    }
+
+    section.portifolio .flex {
+        gap: 60px;
+    }
+
+    /*RODAPE*/
+
+    footer .flex{
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer .line-footer {
+        padding: 30px 0;
+        text-align: center;
     }
 }
