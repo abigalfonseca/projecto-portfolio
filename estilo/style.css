@@ -303,7 +303,7 @@ section.portifolio {
 }
 
 section.portifolio .flex {
-    justify-content: space-around;
+    gap: 30px;
     margin-top: 60px;
     margin-bottom: 60px;
 }
@@ -374,10 +374,11 @@ form input, form textarea {
 
 form textarea{
     resize: none;
+    padding-bottom: 50px;
     max-height: 200px;
 }
 
-form .btn-enviar {
+.btn-enviar {
     margin-top: 20px;
     text-align: center;
 
@@ -427,6 +428,7 @@ footer .line-footer p a:hover {
 }
 
 @media screen and (max-width: 1020px) {
+
     /*GERAIS*/
     .flex {
         flex-direction: column;
@@ -509,7 +511,7 @@ footer .line-footer p a:hover {
     }
 
     section.portifolio .flex {
-        gap: 60px;
+        gap: 30px;
     }
 
     /*RODAPE*/
