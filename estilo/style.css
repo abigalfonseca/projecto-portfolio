@@ -454,8 +454,17 @@ footer .line-footer p a:hover {
     padding: 40px;
 }
 
+.cookies-sms .cookies-ico {
+    margin-right: 30px;
+}
+
+.cookies-sms .cookies-ico:hover {
+    transform: scale(0.9);
+    transition: .2s;
+}
+
 .cookies-sms .cookies-btn {
-    margin-left: 30px;
+    margin-left: 20px;
     transition: .8s;
 }
 
@@ -576,15 +585,24 @@ footer .line-footer p a:hover {
 
     .cookies-sms {
         
-        height: 280px;
+        height: 490px;
         width: 95%;
         border-radius: 25px;
         box-shadow: 0 0 20px #ffffff50;
+        display: flex;
+        flex-direction: column;
     }
 
     .cookies-sms .cookies-texto {
         display: flex;
         gap: 20px;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .cookies-sms .cookies-ico {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
