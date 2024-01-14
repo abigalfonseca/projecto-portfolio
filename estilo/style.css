@@ -10,6 +10,10 @@
     display: flex;
 }
 
+.efeito-txt-topo, .efeito-img-topo, .titulo1, .efeito-img-sobre, .efeito-texto-sobre, .efeito-especialidade1, .efeito-especialidade2, .efeito-especialidade3, .efeito-img-port1, .efeito-img-port2, .efeito-img-port3, .efeito-form1, .efeito-form2, .efeito-form3, .efeito-form4, .efeito-form5, .efeito-btn-form, .efeito-cookies {
+    visibility: hidden;
+}
+
 .interface {
     max-width: 1280px;
     margin: 0 auto;
@@ -27,7 +31,7 @@
 }
 
 .btn-contacto button {
-    padding: 10px 40px;
+    padding: 10px 30px;
     font-weight: 600;
     font-size: 18px;
     background-color: #00FF08;
@@ -92,6 +96,8 @@ header a {
     display: inline-block;
 }
 
+
+
 header nav.menu-desktop a:hover {
     color: #fff;
     transform: scale(1.05);
@@ -117,8 +123,10 @@ header nav.menu-desktop ul li {
 
     .btn-abrir i {
         color: #00FF08;
-        font-size: 45px;
+        font-size: 48px;
+        font-weight: bold;
         display: none;
+        cursor: pointer;
     }
     
     .btn-abrir:hover{
