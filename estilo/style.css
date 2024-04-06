@@ -10,10 +10,6 @@
     display: flex;
 }
 
-.efeito-txt-topo, .efeito-img-topo, .titulo1, .efeito-img-sobre, .efeito-texto-sobre, .efeito-especialidade1, .efeito-especialidade2, .efeito-especialidade3, .efeito-img-port1, .efeito-img-port2, .efeito-img-port3, .efeito-form1, .efeito-form2, .efeito-form3, .efeito-form4, .efeito-form5, .efeito-btn-form, .efeito-cookies {
-    visibility: hidden;
-}
-
 .interface {
     max-width: 1280px;
     margin: 0 auto;
@@ -76,10 +72,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-
-
 /* ESTILO DO CABEÇALHO DO SITE */
-
 header {
     padding: 40px 8%;
 }
@@ -121,7 +114,6 @@ header nav.menu-desktop ul li {
 }
 
 /*ESTILO DO MENU MOBILE*/
-
     .btn-abrir i {
         color: #00FF08;
         font-size: 48px;
@@ -194,10 +186,7 @@ header nav.menu-desktop ul li {
         
     }
 
-
-
 /* ESTILO DO TOPO DO SITE */
-
 section.topo-do-site {
     padding: 40px 8%;
 }
@@ -239,7 +228,6 @@ section.topo-do-site h1 {
 }
 
 /* ESTILO ESPECIALIDADES */
-
 section.especialidades {
     padding: 90px 8%;
 }
@@ -272,7 +260,6 @@ section.especialidades .flex {
 }
 
 /* ESTILO SOBRE */
-
 section.sobre {
     padding: 90px 8%;
 }
@@ -304,7 +291,6 @@ section.sobre .flex {
 }
 
 /* ESTILO DO PORTIFOLIO */
-
 section.portifolio {
     padding: 90px 8%;
     padding-bottom: 20px;
@@ -355,7 +341,6 @@ section.portifolio .flex {
 }
 
 /* ESTILO FORMULÁRIO DE CONTATO*/
-
 section.formulario {
     padding: 90px 8%;
 }
@@ -403,7 +388,6 @@ form .btn-enviar input{
 }
 
 /* ESTILO DO RODAPE*/
-
 footer {
     padding: 40px 8%;
     box-shadow: 0px 0px 40px 10px #ffffff28;
@@ -437,7 +421,6 @@ footer .line-footer p a:hover {
 }
 
 /* MENSAGEM COOKIES */
-
 .cookies-sms {
     width: 90%;
     background-color: #000;
@@ -509,13 +492,11 @@ footer .line-footer p a:hover {
     }
 
     /*CABEÇALHO*/
-
     .menu-desktop, .btn-contacto {
         display: none;
     }
     
     /*MENU MOBILE*/
-
     .btn-abrir i {
         display: block;
     }
@@ -525,7 +506,6 @@ footer .line-footer p a:hover {
     }
 
     /*TOPO DO SITE*/
-
     section.topo-do-site .flex {
         gap: 40px;
     }
@@ -543,7 +523,6 @@ footer .line-footer p a:hover {
     }
 
     /* ESTILO ESPECIALIDADES */
-
     section.especialidades {
     padding: 20px 8%;
     }
@@ -579,7 +558,6 @@ footer .line-footer p a:hover {
     }
 
     /*RODAPE*/
-
     footer .flex{
         flex-direction: column;
         gap: 20px;
@@ -590,7 +568,6 @@ footer .line-footer p a:hover {
     }
     
     /*MENSAGEM DE COOKIES*/
-
     .cookies-sms {
         
         height: 490px;
